@@ -1,7 +1,7 @@
 # SpeedoReco
 
 ## Introduction
-This repository contains Jupyter notebooks for a recommendation system developed for H&M, as part of the BT4222 module. The project aims to enhance customer experiences by providing personalized product recommendations based on their browsing and purchase history.
+This repository contains Jupyter notebooks for a recommendation system developed for H&M, as part of the BT4222 module. The project aims to enhance customer experiences by providing personalized product recommendations based on their purchase history and transactional behaviours.
 
 ## Contributors
 Dylan Lo, Li Shuyao, Nicholas Teow, Alden Sio, Bernice Saw, Xu Wenxuan
