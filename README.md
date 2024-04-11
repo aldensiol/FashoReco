@@ -32,10 +32,10 @@ The EDA phase allows us to understand the datasets deeply. We identify patterns,
 Leveraging insights gained from EDA, we engineer new features that enhance our model's ability to provide personalised recommendations. This involves the transformation and creation of new data columns that better represent the customers' preferences and behaviors.
 
 ### 4. Customer Segmentation
-This step involves segmenting H&M's vast customer base into distinct groups based on customer characteristics, transactional behaviors, and product preferences. We employ various clustering techniques such as KPrototypes, KModes, and HDBSCAN to find the optimal segmentation. Each segment is then analysed and visualised to gain a deeper understanding of the distinct customer profiles.
+This step involves segmenting H&M's vast customer base into distinct groups based on customer characteristics and transactional behaviors. We employ various clustering techniques such as KPrototypes and KMeans to find the optimal segmentation. Each segment is then analysed and visualised to gain a deeper understanding of the distinct customer profiles.
 
 ### 5. Model Development
-Finally, we develop the recommendation system using machine learning algorithms. This model is trained and tested on our processed and segmented data, ensuring it can generate accurate and personalized product recommendations for each customer segment. This utilises time-decay-based filtering, and collaborative-filtering as ensemble learning methods.
+Finally, we develop the recommendation system using machine learning algorithms. This model is trained and tested on our processed and segmented data, ensuring it can generate accurate and personalized product recommendations for each customer segment. This utilises time-decay-based content filtering, and time-infused collaborative-filtering as individual models. The weights for the 2 models that dictates recommendations for different permutations of customers (based on their clusters) are then predicted by a hybrid lightGBM model, so as to deliver a more personalised recommendation.
 
 ## Visualization and Insights
 Throughout each phase, we heavily utilise visualisation tools to illustrate our findings and support our decisions. These visual aids are crucial for understanding the complex relationships within the data and validating our approach to personalized recommendations.
